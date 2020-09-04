@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C328BC42502292100CF17FC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BC32502292100CF17FC /* Endpoint.swift */; };
+		4C328BC82502294000CF17FC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BC72502294000CF17FC /* NetworkService.swift */; };
+		4C328BCC2502298700CF17FC /* NSManagedObject+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BCB2502298700CF17FC /* NSManagedObject+init.swift */; };
+		4C328BCE2502298F00CF17FC /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BCD2502298F00CF17FC /* NSManagedObjectContext+Extension.swift */; };
+		4C328BD02502299B00CF17FC /* String+splitIntoRanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BCF2502299B00CF17FC /* String+splitIntoRanges.swift */; };
+		4C328BD3250229D100CF17FC /* DefenitionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BD2250229D100CF17FC /* DefenitionsService.swift */; };
+		4C328BD525022A3C00CF17FC /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BD425022A3C00CF17FC /* Texts.swift */; };
+		4C328BD725022FAD00CF17FC /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BD625022FAD00CF17FC /* AppConfiguration.swift */; };
+		4C328BDB25023A9100CF17FC /* Defenition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BDA25023A9100CF17FC /* Defenition.swift */; };
+		4C328BE025023C9000CF17FC /* JSONDecoder+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BDF25023C9000CF17FC /* JSONDecoder+Decode.swift */; };
+		4C328BE225023CA200CF17FC /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BE125023CA200CF17FC /* DecodingError.swift */; };
+		4C328BE425023CEA00CF17FC /* DefenitionEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C328BE325023CEA00CF17FC /* DefenitionEndpoint.swift */; };
+		E527332E24EADFEE00BE52BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E527332D24EADFEE00BE52BE /* AppDelegate.swift */; };
+		E527333524EADFEE00BE52BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E527333324EADFEE00BE52BE /* Main.storyboard */; };
+		E527333824EADFEE00BE52BE /* Lemmatizator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E527333624EADFEE00BE52BE /* Lemmatizator.xcdatamodeld */; };
+		E527333A24EADFEF00BE52BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E527333924EADFEF00BE52BE /* Assets.xcassets */; };
+		E527333D24EADFEF00BE52BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E527333B24EADFEF00BE52BE /* LaunchScreen.storyboard */; };
+		E527334824EADFEF00BE52BE /* LemmatizatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E527334724EADFEF00BE52BE /* LemmatizatorTests.swift */; };
+		E527335324EAE00000BE52BE /* Lemmatizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E527335224EAE00000BE52BE /* Lemmatizator.swift */; };
+		E527335724EAE05E00BE52BE /* catcher.txt in Resources */ = {isa = PBXBuildFile; fileRef = E527335524EAE05E00BE52BE /* catcher.txt */; };
+		E527335824EAE05E00BE52BE /* mobydick.txt in Resources */ = {isa = PBXBuildFile; fileRef = E527335624EAE05E00BE52BE /* mobydick.txt */; };
+		E527335A24EAE0D200BE52BE /* stopwords in Resources */ = {isa = PBXBuildFile; fileRef = E527335924EAE0D200BE52BE /* stopwords */; };
+		E527335B24EAE23E00BE52BE /* catcher.txt in Resources */ = {isa = PBXBuildFile; fileRef = E527335524EAE05E00BE52BE /* catcher.txt */; };
+		E527335C24EAE24200BE52BE /* mobydick.txt in Resources */ = {isa = PBXBuildFile; fileRef = E527335624EAE05E00BE52BE /* mobydick.txt */; };
+		E527335D24EAE24500BE52BE /* stopwords in Resources */ = {isa = PBXBuildFile; fileRef = E527335924EAE0D200BE52BE /* stopwords */; };
+		E527336024EAE73D00BE52BE /* NaturalLanguage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E527335F24EAE73D00BE52BE /* NaturalLanguage.framework */; };
+		EB0C6A8924EFEC3000B41FCC /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C6A8824EFEC3000B41FCC /* Dependencies.swift */; };
+		EB0C6A8B24EFEC3A00B41FCC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0C6A8A24EFEC3A00B41FCC /* Router.swift */; };
+		EB6D1D2C24EC5C9B00E94FB6 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D1D2B24EC5C9B00E94FB6 /* WordListViewController.swift */; };
+		EB6D1D2E24EC5D2D00E94FB6 /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D1D2D24EC5D2D00E94FB6 /* WordDetailViewController.swift */; };
+		EBAC8AAC24ED2DCD008E0AB2 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC8AAB24ED2DCD008E0AB2 /* ObjectType.swift */; };
+		EBAC8AAE24ED3260008E0AB2 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC8AAD24ED3260008E0AB2 /* Books.swift */; };
+		EBAC8AB124ED4322008E0AB2 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC8AAF24ED4322008E0AB2 /* Book+CoreDataClass.swift */; };
+		EBAC8AB324ED432A008E0AB2 /* Book+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAC8AAF24ED4322008E0AB2 /* Book+CoreDataClass.swift */; };
+		EBAE401624EC13A500FAA74C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE401524EC13A500FAA74C /* StorageService.swift */; };
+		EBAE401724EC13A500FAA74C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE401524EC13A500FAA74C /* StorageService.swift */; };
+		EBAE402F24EC24AC00FAA74C /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE402D24EC24AC00FAA74C /* Word+CoreDataClass.swift */; };
+		EBAE403024EC24AC00FAA74C /* Word+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE402D24EC24AC00FAA74C /* Word+CoreDataClass.swift */; };
+		EBDF5ED524ED8B7600E30EE2 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF5ED424ED8B7600E30EE2 /* BookListViewController.swift */; };
+		EBDF5ED724ED8C5600E30EE2 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF5ED624ED8C5600E30EE2 /* BookDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E527334424EADFEF00BE52BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E527332224EADFEE00BE52BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E527332924EADFEE00BE52BE;
+			remoteInfo = Lemmatizator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C328BC32502292100CF17FC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		4C328BC72502294000CF17FC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4C328BCB2502298700CF17FC /* NSManagedObject+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+init.swift"; sourceTree = "<group>"; };
+		4C328BCD2502298F00CF17FC /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
+		4C328BCF2502299B00CF17FC /* String+splitIntoRanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+splitIntoRanges.swift"; sourceTree = "<group>"; };
+		4C328BD2250229D100CF17FC /* DefenitionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenitionsService.swift; sourceTree = "<group>"; };
+		4C328BD425022A3C00CF17FC /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		4C328BD625022FAD00CF17FC /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		4C328BDA25023A9100CF17FC /* Defenition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defenition.swift; sourceTree = "<group>"; };
+		4C328BDF25023C9000CF17FC /* JSONDecoder+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Decode.swift"; sourceTree = "<group>"; };
+		4C328BE125023CA200CF17FC /* DecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
+		4C328BE325023CEA00CF17FC /* DefenitionEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefenitionEndpoint.swift; sourceTree = "<group>"; };
+		E527332A24EADFEE00BE52BE /* Lemmatizator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lemmatizator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E527332D24EADFEE00BE52BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E527333424EADFEE00BE52BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E527333724EADFEE00BE52BE /* Lemmatizator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lemmatizator.xcdatamodel; sourceTree = "<group>"; };
+		E527333924EADFEF00BE52BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E527333C24EADFEF00BE52BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E527333E24EADFEF00BE52BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E527334324EADFEF00BE52BE /* LemmatizatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemmatizatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E527334724EADFEF00BE52BE /* LemmatizatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemmatizatorTests.swift; sourceTree = "<group>"; };
+		E527334924EADFEF00BE52BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E527335224EAE00000BE52BE /* Lemmatizator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemmatizator.swift; sourceTree = "<group>"; };
+		E527335524EAE05E00BE52BE /* catcher.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = catcher.txt; sourceTree = "<group>"; };
+		E527335624EAE05E00BE52BE /* mobydick.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mobydick.txt; sourceTree = "<group>"; };
+		E527335924EAE0D200BE52BE /* stopwords */ = {isa = PBXFileReference; lastKnownFileType = text; path = stopwords; sourceTree = "<group>"; };
+		E527335F24EAE73D00BE52BE /* NaturalLanguage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguage.framework; path = System/Library/Frameworks/NaturalLanguage.framework; sourceTree = SDKROOT; };
+		EB0C6A8824EFEC3000B41FCC /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		EB0C6A8A24EFEC3A00B41FCC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EB6D1D2B24EC5C9B00E94FB6 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		EB6D1D2D24EC5D2D00E94FB6 /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
+		EBAC8AAB24ED2DCD008E0AB2 /* ObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		EBAC8AAD24ED3260008E0AB2 /* Books.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Books.swift; sourceTree = "<group>"; };
+		EBAC8AAF24ED4322008E0AB2 /* Book+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Book+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EBAE401524EC13A500FAA74C /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		EBAE402D24EC24AC00FAA74C /* Word+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Word+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EBDF5ED424ED8B7600E30EE2 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		EBDF5ED624ED8C5600E30EE2 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E527332724EADFEE00BE52BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E527336024EAE73D00BE52BE /* NaturalLanguage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E527334024EADFEF00BE52BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C328BC22502291300CF17FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BC32502292100CF17FC /* Endpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4C328BC52502292700CF17FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BC62502292E00CF17FC /* NetworkService */,
+				EBAE401224EC138100FAA74C /* StorageService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C328BC62502292E00CF17FC /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BC72502294000CF17FC /* NetworkService.swift */,
+				4C328BD1250229BB00CF17FC /* Defenitions */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		4C328BC92502296100CF17FC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BCA2502296D00CF17FC /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4C328BCA2502296D00CF17FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BDE25023C6C00CF17FC /* Foundation */,
+				4C328BDD25023C6900CF17FC /* CoreData */,
+				4C328BDC25023C5E00CF17FC /* Codable */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C328BD1250229BB00CF17FC /* Defenitions */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BD2250229D100CF17FC /* DefenitionsService.swift */,
+				4C328BE325023CEA00CF17FC /* DefenitionEndpoint.swift */,
+			);
+			path = Defenitions;
+			sourceTree = "<group>";
+		};
+		4C328BDC25023C5E00CF17FC /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BDF25023C9000CF17FC /* JSONDecoder+Decode.swift */,
+				4C328BE125023CA200CF17FC /* DecodingError.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		4C328BDD25023C6900CF17FC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BCB2502298700CF17FC /* NSManagedObject+init.swift */,
+				4C328BCD2502298F00CF17FC /* NSManagedObjectContext+Extension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4C328BDE25023C6C00CF17FC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BCF2502299B00CF17FC /* String+splitIntoRanges.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		E527332124EADFEE00BE52BE = {
+			isa = PBXGroup;
+			children = (
+				E527332C24EADFEE00BE52BE /* Lemmatizator */,
+				E527334624EADFEF00BE52BE /* LemmatizatorTests */,
+				E527332B24EADFEE00BE52BE /* Products */,
+				E527335E24EAE73D00BE52BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E527332B24EADFEE00BE52BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E527332A24EADFEE00BE52BE /* Lemmatizator.app */,
+				E527334324EADFEF00BE52BE /* LemmatizatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E527332C24EADFEE00BE52BE /* Lemmatizator */ = {
+			isa = PBXGroup;
+			children = (
+				E527333E24EADFEF00BE52BE /* Info.plist */,
+				E527332D24EADFEE00BE52BE /* AppDelegate.swift */,
+				EBDF5EDA24ED8DD800E30EE2 /* BusinessLogic */,
+				4C328BC92502296100CF17FC /* Core */,
+				EBDF5EDB24ED8DDF00E30EE2 /* Presentation */,
+			);
+			path = Lemmatizator;
+			sourceTree = "<group>";
+		};
+		E527334624EADFEF00BE52BE /* LemmatizatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E527334724EADFEF00BE52BE /* LemmatizatorTests.swift */,
+				E527334924EADFEF00BE52BE /* Info.plist */,
+			);
+			path = LemmatizatorTests;
+			sourceTree = "<group>";
+		};
+		E527335424EAE01100BE52BE /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BD425022A3C00CF17FC /* Texts.swift */,
+				E527335524EAE05E00BE52BE /* catcher.txt */,
+				E527335624EAE05E00BE52BE /* mobydick.txt */,
+				E527335924EAE0D200BE52BE /* stopwords */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
+		E527335E24EAE73D00BE52BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E527335F24EAE73D00BE52BE /* NaturalLanguage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6D1D2F24EC5EA700E94FB6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC8AAB24ED2DCD008E0AB2 /* ObjectType.swift */,
+				EBAC8AAD24ED3260008E0AB2 /* Books.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EBAE401224EC138100FAA74C /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				EBAE401524EC13A500FAA74C /* StorageService.swift */,
+				E527333624EADFEE00BE52BE /* Lemmatizator.xcdatamodeld */,
+			);
+			path = StorageService;
+			sourceTree = "<group>";
+		};
+		EBAE401824EC147400FAA74C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBAC8AAF24ED4322008E0AB2 /* Book+CoreDataClass.swift */,
+				EBAE402D24EC24AC00FAA74C /* Word+CoreDataClass.swift */,
+				4C328BDA25023A9100CF17FC /* Defenition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBAE401924EC148200FAA74C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E527335424EAE01100BE52BE /* Texts */,
+				E527333924EADFEF00BE52BE /* Assets.xcassets */,
+				E527333B24EADFEF00BE52BE /* LaunchScreen.storyboard */,
+				E527333324EADFEE00BE52BE /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EBDE17BC24EE831300F01BF7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF5ED424ED8B7600E30EE2 /* BookListViewController.swift */,
+				EB6D1D2B24EC5C9B00E94FB6 /* WordListViewController.swift */,
+				EBDF5ED624ED8C5600E30EE2 /* BookDetailsViewController.swift */,
+				EB6D1D2D24EC5D2D00E94FB6 /* WordDetailViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EBDF5EDA24ED8DD800E30EE2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				4C328BD625022FAD00CF17FC /* AppConfiguration.swift */,
+				EB0C6A8824EFEC3000B41FCC /* Dependencies.swift */,
+				E527335224EAE00000BE52BE /* Lemmatizator.swift */,
+				EBAE401824EC147400FAA74C /* Models */,
+				4C328BC22502291300CF17FC /* Networking */,
+				4C328BC52502292700CF17FC /* Services */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		EBDF5EDB24ED8DDF00E30EE2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EB0C6A8A24EFEC3A00B41FCC /* Router.swift */,
+				EB6D1D2F24EC5EA700E94FB6 /* Enums */,
+				EBDE17BC24EE831300F01BF7 /* Modules */,
+				EBAE401924EC148200FAA74C /* Resources */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E527332924EADFEE00BE52BE /* Lemmatizator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E527334C24EADFEF00BE52BE /* Build configuration list for PBXNativeTarget "Lemmatizator" */;
+			buildPhases = (
+				E527332624EADFEE00BE52BE /* Sources */,
+				E527332724EADFEE00BE52BE /* Frameworks */,
+				E527332824EADFEE00BE52BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lemmatizator;
+			productName = Lemmatizator;
+			productReference = E527332A24EADFEE00BE52BE /* Lemmatizator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E527334224EADFEF00BE52BE /* LemmatizatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E527334F24EADFEF00BE52BE /* Build configuration list for PBXNativeTarget "LemmatizatorTests" */;
+			buildPhases = (
+				E527333F24EADFEF00BE52BE /* Sources */,
+				E527334024EADFEF00BE52BE /* Frameworks */,
+				E527334124EADFEF00BE52BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E527334524EADFEF00BE52BE /* PBXTargetDependency */,
+			);
+			name = LemmatizatorTests;
+			productName = LemmatizatorTests;
+			productReference = E527334324EADFEF00BE52BE /* LemmatizatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E527332224EADFEE00BE52BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = g00dm0us3;
+				TargetAttributes = {
+					E527332924EADFEE00BE52BE = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E527334224EADFEF00BE52BE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E527332924EADFEE00BE52BE;
+					};
+				};
+			};
+			buildConfigurationList = E527332524EADFEE00BE52BE /* Build configuration list for PBXProject "Lemmatizator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E527332124EADFEE00BE52BE;
+			productRefGroup = E527332B24EADFEE00BE52BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E527332924EADFEE00BE52BE /* Lemmatizator */,
+				E527334224EADFEF00BE52BE /* LemmatizatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E527332824EADFEE00BE52BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E527333D24EADFEF00BE52BE /* LaunchScreen.storyboard in Resources */,
+				E527333A24EADFEF00BE52BE /* Assets.xcassets in Resources */,
+				E527333524EADFEE00BE52BE /* Main.storyboard in Resources */,
+				E527335724EAE05E00BE52BE /* catcher.txt in Resources */,
+				E527335A24EAE0D200BE52BE /* stopwords in Resources */,
+				E527335824EAE05E00BE52BE /* mobydick.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E527334124EADFEF00BE52BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E527335C24EAE24200BE52BE /* mobydick.txt in Resources */,
+				E527335D24EAE24500BE52BE /* stopwords in Resources */,
+				E527335B24EAE23E00BE52BE /* catcher.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E527332624EADFEE00BE52BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAE401624EC13A500FAA74C /* StorageService.swift in Sources */,
+				E527335324EAE00000BE52BE /* Lemmatizator.swift in Sources */,
+				E527332E24EADFEE00BE52BE /* AppDelegate.swift in Sources */,
+				EB0C6A8B24EFEC3A00B41FCC /* Router.swift in Sources */,
+				4C328BE225023CA200CF17FC /* DecodingError.swift in Sources */,
+				EB6D1D2C24EC5C9B00E94FB6 /* WordListViewController.swift in Sources */,
+				EBAC8AAC24ED2DCD008E0AB2 /* ObjectType.swift in Sources */,
+				4C328BD02502299B00CF17FC /* String+splitIntoRanges.swift in Sources */,
+				4C328BD525022A3C00CF17FC /* Texts.swift in Sources */,
+				EBAC8AAE24ED3260008E0AB2 /* Books.swift in Sources */,
+				4C328BC42502292100CF17FC /* Endpoint.swift in Sources */,
+				4C328BE025023C9000CF17FC /* JSONDecoder+Decode.swift in Sources */,
+				EBAE402F24EC24AC00FAA74C /* Word+CoreDataClass.swift in Sources */,
+				EBAC8AB124ED4322008E0AB2 /* Book+CoreDataClass.swift in Sources */,
+				EB0C6A8924EFEC3000B41FCC /* Dependencies.swift in Sources */,
+				E527333824EADFEE00BE52BE /* Lemmatizator.xcdatamodeld in Sources */,
+				4C328BD725022FAD00CF17FC /* AppConfiguration.swift in Sources */,
+				4C328BDB25023A9100CF17FC /* Defenition.swift in Sources */,
+				4C328BC82502294000CF17FC /* NetworkService.swift in Sources */,
+				EBDF5ED724ED8C5600E30EE2 /* BookDetailsViewController.swift in Sources */,
+				4C328BD3250229D100CF17FC /* DefenitionsService.swift in Sources */,
+				4C328BCC2502298700CF17FC /* NSManagedObject+init.swift in Sources */,
+				EBDF5ED524ED8B7600E30EE2 /* BookListViewController.swift in Sources */,
+				4C328BCE2502298F00CF17FC /* NSManagedObjectContext+Extension.swift in Sources */,
+				EB6D1D2E24EC5D2D00E94FB6 /* WordDetailViewController.swift in Sources */,
+				4C328BE425023CEA00CF17FC /* DefenitionEndpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E527333F24EADFEF00BE52BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAC8AB324ED432A008E0AB2 /* Book+CoreDataClass.swift in Sources */,
+				E527334824EADFEF00BE52BE /* LemmatizatorTests.swift in Sources */,
+				EBAE403024EC24AC00FAA74C /* Word+CoreDataClass.swift in Sources */,
+				EBAE401724EC13A500FAA74C /* StorageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E527334524EADFEF00BE52BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E527332924EADFEE00BE52BE /* Lemmatizator */;
+			targetProxy = E527334424EADFEF00BE52BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E527333324EADFEE00BE52BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E527333424EADFEE00BE52BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E527333B24EADFEF00BE52BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E527333C24EADFEF00BE52BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E527334A24EADFEF00BE52BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E527334B24EADFEF00BE52BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E527334D24EADFEF00BE52BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DFZ8N2CQSG;
+				INFOPLIST_FILE = Lemmatizator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kibragimov.Lemmatizator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E527334E24EADFEF00BE52BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3QFXJL55Q;
+				INFOPLIST_FILE = Lemmatizator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = g00dm0us3.Lemmatizator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E527335024EADFEF00BE52BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3QFXJL55Q;
+				INFOPLIST_FILE = LemmatizatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = g00dm0us3.LemmatizatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lemmatizator.app/Lemmatizator";
+			};
+			name = Debug;
+		};
+		E527335124EADFEF00BE52BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D3QFXJL55Q;
+				INFOPLIST_FILE = LemmatizatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = g00dm0us3.LemmatizatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lemmatizator.app/Lemmatizator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E527332524EADFEE00BE52BE /* Build configuration list for PBXProject "Lemmatizator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E527334A24EADFEF00BE52BE /* Debug */,
+				E527334B24EADFEF00BE52BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E527334C24EADFEF00BE52BE /* Build configuration list for PBXNativeTarget "Lemmatizator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E527334D24EADFEF00BE52BE /* Debug */,
+				E527334E24EADFEF00BE52BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E527334F24EADFEF00BE52BE /* Build configuration list for PBXNativeTarget "LemmatizatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E527335024EADFEF00BE52BE /* Debug */,
+				E527335124EADFEF00BE52BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E527333624EADFEE00BE52BE /* Lemmatizator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E527333724EADFEE00BE52BE /* Lemmatizator.xcdatamodel */,
+			);
+			currentVersion = E527333724EADFEE00BE52BE /* Lemmatizator.xcdatamodel */;
+			path = Lemmatizator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E527332224EADFEE00BE52BE /* Project object */;
+}
