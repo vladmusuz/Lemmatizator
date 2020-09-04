@@ -12,7 +12,7 @@ Following what show unique words in new screen, when you click to the word, its 
 
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/55618255/92270327-c5af3b00-eedd-11ea-89bf-15f737273b54.jpg" width="200"> <img src="https://user-images.githubusercontent.com/55618255/92270338-ca73ef00-eedd-11ea-9327-aba4d6ee30c7.jpg" width="200"> <img src="https://user-images.githubusercontent.com/55618255/92270343-cba51c00-eedd-11ea-9786-7b1505ac4926.jpg" width="200"> <img src="https://user-images.githubusercontent.com/55618255/92270344-cc3db280-eedd-11ea-8e9c-4850288187c9.jpg" width="200"> 
+<img src="https://user-images.githubusercontent.com/55618255/92272980-728bb700-eee2-11ea-92ad-0bf362a8232a.png" width="200"> <img src="https://user-images.githubusercontent.com/55618255/92272983-73bce400-eee2-11ea-8f81-e64854115e4b.png" width="200"> <img src="https://user-images.githubusercontent.com/55618255/92272985-74ee1100-eee2-11ea-8888-ce9d9e84fb87.png" width="200"> 
 
 
 ## Technologies
